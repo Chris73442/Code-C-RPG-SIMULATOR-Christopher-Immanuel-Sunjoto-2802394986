@@ -13,7 +13,7 @@ public class AudioManager : MonoBehaviour
     private bool resetOnMenu = false;
 
     private const string VOLUME_KEY = "GameVolume";
-    private const float DEFAULT_VOLUME = 0.4f;
+    private const float DEFAULT_VOLUME = 5f;
 
     private void Awake()
     {
@@ -133,3 +133,4 @@ public class AudioManager : MonoBehaviour
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 }
+
