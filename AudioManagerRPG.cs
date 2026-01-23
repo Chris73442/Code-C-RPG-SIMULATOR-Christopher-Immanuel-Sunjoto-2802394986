@@ -54,21 +54,8 @@ public class AudioManager : MonoBehaviour
             return;
         }
 
-        // RESET SAAT MASUK GAMEPLAY2
-        if (scene.name == "Gameplay2Scene")
-        {
-            ResetMusic();
-            return;
-        }
-        // RESET SAAT MASUK GAMEPLAY3
-        if (scene.name == "Gameplay3Scene")
-        {
-            ResetMusic();
-            return;
-        }
-
         // RESET SAAT BALIK KE MENU SETELAH ENDING
-        if (scene.name == "Main Menu Scene")
+        if (scene.name == "MainMenuScene")
         {
             if (resetOnMenu)
             {
@@ -133,4 +120,3 @@ public class AudioManager : MonoBehaviour
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 }
-
